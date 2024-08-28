@@ -1,6 +1,9 @@
-section {
-  height: 100vh;
-}
-.header-fixed .menu-item a {
+.header-fixed .main-navbar .custom-nav .menu-item a {
   color: #503600;
+}
+
+@media (max-width: 767px) {
+  .photo-gallery h2 {
+    text-align: center;
+  }
 }
