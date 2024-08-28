@@ -10,6 +10,10 @@
 	color: #503600;
 }
 
+.photo-gallery h2 {
+	padding-top: 0;
+}
+
 /* ------------ Date Counter Start --------------- */
 .countdown-timer-section {
 	background: url(../img/Pattern/bg-pattern.webp);
@@ -145,7 +149,26 @@ main.countdown-timer-container > h2 {
 /* ------------ Date Counter Start --------------- */
 
 @media (max-width: 767px) {
+	.pricing-title {
+		text-align: center;
+	}
+
 	.photo-gallery h2 {
 		text-align: center;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.hero-section-version1 {
+		padding: 160px 5px 24px;
+	}
+
+	main.countdown-timer-container > h2.award-date {
+		font-size: 2rem;
+	}
+
+	main.countdown-timer-container > h2 {
+		font-size: 1.5rem;
 	}
 }

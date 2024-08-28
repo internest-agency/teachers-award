@@ -805,7 +805,7 @@ footer {
 	font-size: 16px !important;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: var(--theme);
+	color: var(--color-2);
 }
 @media (max-width: 1199px) {
 	.header-section .main-navbar .custom-nav .menu-item button,
