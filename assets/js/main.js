@@ -24,7 +24,26 @@ CSS TABLE OF CONTENTS
 11. wow animation
 12.Custom Search
 
+
 -------------------*/
+
+// Function to remove the class when width is 991px or below
+function checkWidthAndRemoveClass() {
+	const element = document.querySelector(".header-section.text-color-white");
+
+	if (window.innerWidth <= 991) {
+		element.classList.remove("text-color-white");
+	} else {
+		element.classList.add("text-color-white");
+	}
+}
+
+// Add event listener to check when the window is resized
+window.addEventListener("resize", checkWidthAndRemoveClass);
+
+// Initial check when the page loads
+checkWidthAndRemoveClass();
+
 // {------ Start Countdown Timer ------}
 const newYearEl = document.getElementById("new_year");
 const newYearTitle = document.getElementById("new_year_title");
