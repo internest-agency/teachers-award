@@ -1,9 +1,151 @@
-.header-fixed .main-navbar .custom-nav .menu-item a {
-  color: #503600;
+:root {
+	--color-1: #000;
+	--color-2: #89501f;
+	--color-3: #391c0f;
+	--backgroun-1: #f5eccc;
+	--backgroun-2: #daab4b;
 }
 
+.header-fixed .main-navbar .custom-nav .menu-item a {
+	color: #503600;
+}
+
+/* ------------ Date Counter Start --------------- */
+.countdown-timer-section {
+	background: url(../img/Pattern/bg-pattern.webp);
+	background-color: var(--theme);
+	position: relative;
+	z-index: 1;
+	min-height: 60vh;
+	display: flex;
+	pointer-events: none;
+	user-select: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* #overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} */
+
+main.countdown-timer-container {
+	position: relative;
+	pointer-events: none;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main.countdown-timer-container > h2.award-date {
+	background: linear-gradient(180deg, var(--color-1), var(--color-3));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 4.5rem;
+	letter-spacing: 3px;
+}
+
+@media screen and (max-width: 600px) {
+	main.countdown-timer-container > h2.award-date {
+		font-size: 3rem;
+	}
+}
+
+main.countdown-timer-container > h2 {
+	color: var(--color-2);
+	font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+	main.countdown-timer-container > h2 {
+		font-size: 2rem;
+	}
+}
+
+.countdown-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+	.countdown-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.countdown-element {
+	position: relative;
+	background: linear-gradient(320deg, var(--backgroun-1), var(--backgroun-2));
+	background-clip: padding-box;
+	border: solid 1px transparent;
+	border-radius: 1rem;
+	box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.25);
+	padding: 1rem;
+	text-align: center;
+}
+
+.countdown-element:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	margin: -1px;
+	border-radius: inherit;
+	background: linear-gradient(160deg, var(--color-2), var(--backgroun-2));
+}
+
+@media screen and (max-width: 600px) {
+	.countdown-element {
+		padding: 0.75rem;
+	}
+}
+
+.countdown-element > p {
+	background: linear-gradient(160deg, var(--color-1), var(--color-3));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 3.5rem;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.countdown-element > p {
+		font-size: 3rem;
+	}
+}
+
+.countdown-element > span {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--color-2);
+}
+
+@media screen and (max-width: 600px) {
+	.countdown-element > span {
+		font-size: 1rem;
+	}
+}
+/* ------------ Date Counter Start --------------- */
+
 @media (max-width: 767px) {
-  .photo-gallery h2 {
-    text-align: center;
-  }
+	.photo-gallery h2 {
+		text-align: center;
+	}
 }
