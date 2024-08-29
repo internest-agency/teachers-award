@@ -29,6 +29,11 @@
 	color: var(--color-3);
 }
 
+.about-product h2 {
+	font-size: 2rem;
+	line-height: 1.6em;
+}
+
 /* ------------ Date Counter Start --------------- */
 .countdown-timer-section {
 	background: url(../img/Pattern/bg-pattern.webp);
@@ -175,6 +180,9 @@ main.countdown-timer-container > h2 {
 }
 
 @media screen and (max-width: 480px) {
+	.about-product h2 {
+		font-size: 1.6rem;
+	}
 	.hero-section-version1 {
 		padding: 160px 5px 24px;
 	}
@@ -185,5 +193,11 @@ main.countdown-timer-container > h2 {
 
 	main.countdown-timer-container > h2 {
 		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 375px) {
+	.about-product h2 {
+		font-size: 1.3rem;
+		line-height: 1.8em;
 	}
 }
