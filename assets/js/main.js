@@ -53,7 +53,7 @@ const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
 const newYear = new Date().getFullYear() + 1;
-const newYearTime = new Date(`August 30 2024 00:00:00`);
+const newYearTime = new Date(`August 30 2024 17:30:00`);
 
 function updateCountdown() {
 	const currentTime = new Date();
