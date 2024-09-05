@@ -45,6 +45,7 @@ window.addEventListener("resize", checkWidthAndRemoveClass);
 checkWidthAndRemoveClass();
 
 // {------ Start Countdown Timer ------}
+/*
 const newYearEl = document.getElementById("new_year");
 const newYearTitle = document.getElementById("new_year_title");
 const daysEl = document.getElementById("days");
@@ -86,7 +87,7 @@ function formatTime(time) {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
-
+*/
 // {------ End Countdown Timer --------}
 // timer end
 
